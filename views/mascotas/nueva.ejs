@@ -1,0 +1,47 @@
+<section class="panel-formulario">
+  <p class="etiqueta">NUEVO INGRESO</p>
+  <h1><%= titulo %></h1>
+
+  <% if (typeof error !== 'undefined' && error) { %>
+    <p class="error" role="alert"><%= error %></p>
+  <% } %>
+
+  <form action="/mascotas" method="post" class="formulario">
+    <label for="nombre">Nombre</label>
+    <input
+      id="nombre"
+      name="nombre"
+      value="<%= valores.nombre ?? '' %>"
+      required
+    />
+    <label for="especie">Especie</label>
+    <input
+      id="especie"
+      name="especie"
+      value="<%= valores.categoria ?? '' %>"
+      required
+    />
+    <label for="edad">Edad</label>
+    <input
+      id="edad"
+      name="edad"
+      type="number"
+      min="1"
+      step="1"
+      value="<%= valores.precio ?? '' %>"
+      required
+    />
+    <label for="estado">Estado</label>
+<select id="estado" name="estado" required>
+  <option value="" disabled <%= !valores.estado ? 'selected' : '' %>>Seleccione un estado</option>
+  <option value="En adopción" <%= valores.estado === 'En adopción' ? 'selected' : '' %>>En adopción</option>
+  <option value="Reservada" <%= valores.estado === 'Reservada' ? 'selected' : '' %>>Reservada</option>
+  <option value="Adoptada" <%= valores.estado === 'Adoptada' ? 'selected' : '' %>>Adoptada</option>
+</select>
+    <label for="descripcion">Descripción</label>
+    <textarea id="descripcion" name="descripcion" rows="5" required>
+    <%= valores.descripcion ?? '' %></textarea
+    >
+    <button type="submit">Agregar Mascota</button>
+  </form>
+</section>

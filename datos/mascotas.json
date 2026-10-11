@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nombre": "Luna",
+    "especie": "Perro",
+    "descripcion": "Cachorra muy enérgica y juguetona, le encanta correr detrás de la pelota.",
+    "edad": 1,
+    "estado": "En adopción",
+    "imagen": "/img/mascota.svg"
+  },
+  {
+    "id": 2,
+    "nombre": "Simba",
+    "especie": "Gato",
+    "descripcion": "Felino tranquilo y muy cariñoso, ideal para departamentos.",
+    "edad": 3,
+    "estado": "Reservada",
+    "imagen": "/img/mascota.svg"
+  },
+  {
+    "id": 3,
+    "nombre": "Rocky",
+    "especie": "Perro",
+    "descripcion": "Perro guardián, noble, obediente y excelente con los niños.",
+    "edad": 5,
+    "estado": "Adoptada",
+    "imagen": "/img/mascota.svg"
+  },
+  {
+    "id": 4,
+    "nombre": "Mila",
+    "especie": "Gato",
+    "descripcion": "Gatita curiosa y exploradora, le gusta dormir en lugares altos.",
+    "edad": 2,
+    "estado": "En adopción",
+    "imagen": "/img/mascota.svg"
+  },
+  {
+    "id": 5,
+    "nombre": "Coco",
+    "especie": "Conejo",
+    "descripcion": "Conejo doméstico muy manso, acostumbrado a comer vegetales frescos.",
+    "edad": 0,
+    "estado": "En adopción",
+    "imagen": "/img/mascota.svg"
+  }
+]
